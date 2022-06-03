@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Guess number</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="inner">
+    <div class="intro">
+        <h1>Number Guessing Game</h1>
+        <h2>Try and guess random number between 1 and 100</h2>
+        <h2>You have 10 attempts to guess</h2>
+    </div>
+    <div class="guess_number">
+        <div class="container">
+            <h1>Guess a number</h1>
+            <label>
+                <input type="text" class="input_text">
+            </label>
+            <button class="submit" onclick="submitAnswer()">Submit Answer</button>
+            <h2 class="info_guess">Previous Guesses</h2>
+            <h2 class="game_indicator"></h2>
+            <h2 class="info_guess">Guesses Remaining</h2>
+            <h2 class="remains"></h2>
+
+            <h1 class="high_low"></h1>
+            <h1 class="end_start" onclick="startGame()"></h1>
+        </div>
+    </div>
+</div>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
